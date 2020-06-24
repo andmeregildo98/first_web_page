@@ -78,12 +78,49 @@
             </p>
           </div>
       </div> 
-    </div>  
-    <div>
-        <img src="/lucky01.jpg"  class="" alt="rata mostrada" width="100%">
+    </div> 
+    
+    <style type="text/css">
+        #slider{
+           overflow: hidden;
+        }
+        #slider figure {
+           position: relative;
+           width: 100%;
+           margin: 0;
+           left: 0;
+           animation: 20s slider infinite;
+        }
+        #slider figure img{
+           width: 20%;
+           float: left;
+        }
+
+        @keyframes slider {
+           0%{left:0%;}
+           30%{left:0%;}
+           45%{left:30%;}
+           55%{left:30%;}
+           65%{left:55%;}
+           80%{left:55%;}
+           100%{left:80%;}
+
+        }
+
+    </style>
+    
+    <div id="slider">
+        <figure>
+            <img src="/lucky01.jpg"  class="" alt="rata mostrada" width="100%">    
+            <img src="/img/lucky02.jpg"  class="" alt="rata failed" width="100%">
+            <img src="/lucky01.jpg"  class="" alt="rata mostrada" width="100%">    
+            <img src="/img/lucky02.jpg"  class="" alt="rata failed" width="100%">
+        </figure>
+    </div>
+        
     </div>
     <div>
-        <img src="/img/lucky02.jpg"  class="" alt="rata failed" width="100%">
+        
     </div>
     <div class="container text-center">
         <img src="/perro-bebito.png"  class="animate__animated animate__bounceIn" alt="Baby Yoda tu pastor" width="60%">
